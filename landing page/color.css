@@ -55,7 +55,7 @@ body{
    text-align: center;
    margin-left: 5px;
    font-weight: 700;
-   display: inline-block;
+   /* display: inline-block; */
 
 }
 #portion{
@@ -83,24 +83,36 @@ body{
     right: 465px;
     width: 201px;
 }
-#wall{
+#land{
   position: absolute;
   /* top: 10px; */
-  bottom: 0;
+  bottom: -1.5%;
   right: 0;
   z-index: -1;
 }
 #lock{
     position:absolute;
-    bottom: 200px;
+    bottom: 230px;
     right: 150px;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 #lock button{
-    margin-left: 33%;
-    height: 50px;
+    /* margin-left: 33%;*/
+    height: 30px;
     width: 120px;
-    padding: 5px;
     font-weight: 700;
-    margin-top: 15px;
+    font-size: larger;
+    color: #5D80FF;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: pink;
+    gradient: linear-gradient(90deg, #5D80FF 0%, #5D80FF 100%);
+}
+#lock img{
+    width: 75%;
+    height: 100%;
 }
